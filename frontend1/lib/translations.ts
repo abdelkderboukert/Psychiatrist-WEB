@@ -1,17 +1,17 @@
 export interface Translations {
   [key: string]: {
-    en: string
-    ar: string
-    fr: string
-  }
+    en: string;
+    ar: string;
+    fr: string;
+  };
 }
 
 export const translations: Translations = {
   // Header
   "site.title": {
-    en: "Dr. Sarah Psychology",
-    ar: "د. سارة لعلم النفس",
-    fr: "Dr. Sarah Psychologie",
+    en: "Dr.Eddy Farah",
+    ar: "د.عيدي فرح",
+    fr: "Dr.Eddy Farah",
   },
   "nav.language": {
     en: "العربية",
@@ -38,14 +38,14 @@ export const translations: Translations = {
 
   // About Section
   "about.title": {
-    en: "About Dr. Sarah",
-    ar: "عن د. سارة",
-    fr: "À Propos du Dr. Sarah",
+    en: "About Dr.Eddy Farah",
+    ar: "عن د.عيدي فرح",
+    fr: "À Propos du Dr.Eddy Farah",
   },
   "about.description": {
-    en: "Licensed clinical psychologist with over 10 years of experience helping individuals, couples, and families navigate life's challenges.",
-    ar: "طبيبة نفسية إكلينيكية مرخصة مع أكثر من 10 سنوات من الخبرة في مساعدة الأفراد والأزواج والعائلات على التعامل مع تحديات الحياة.",
-    fr: "Psychologue clinicienne agréée avec plus de 10 ans d'expérience aidant les individus, couples et familles à naviguer les défis de la vie.",
+    en: "I specialize in accompanying couples and families to help them overcome emotional and relational challenges. My integrative approach combines several methods to treat anxiety, depression, trauma and other personal problems, with more than 28 years of experience in contact with children, adults, families and couples.",
+    ar: "أنا متخصص في مرافقة الأزواج والعائلات لمساعدتهم على التغلب على التحديات العاطفية والعلائقية. يجمع نهجي التكاملي بين عدة طرق لعلاج القلق والاكتئاب والصدمات والمشاكل الشخصية الأخرى ، مع أكثر من 28 عاما من الخبرة في الاتصال بالأطفال والبالغين والعائلات والأزواج.",
+    fr: "Je suis spécialisé dans l’accompagnement des couples et des familles pour les aider à surmonter les défis émotionnels et relationnels. Mon approche intégrative combine plusieurs méthodes pour traiter l’anxiété, la dépression, les traumatismes et autres problématiques personnelles, avec plus de 28 ans d’expérience au contact des enfants, adultes, familles et couples.",
   },
 
   // Services Section
@@ -394,9 +394,9 @@ export const translations: Translations = {
     fr: "Réservez Votre Rendez-vous",
   },
   "rendezVous.subtitle": {
-    en: "Schedule your session with Dr. Sarah in just a few simple steps",
-    ar: "احجز جلستك مع د. سارة في خطوات بسيطة",
-    fr: "Planifiez votre séance avec Dr. Sarah en quelques étapes simples",
+    en: "Schedule your session with Dr. Eddy Farah in just a few simple steps",
+    ar: "احجز جلستك مع د. Eddy Farah في خطوات بسيطة",
+    fr: "Planifiez votre séance avec Dr. Eddy Farah en quelques étapes simples",
   },
   "rendezVous.step1": {
     en: "Select Service",
@@ -521,9 +521,9 @@ export const translations: Translations = {
     fr: "Vos Commentaires",
   },
   "feedback.form.message.placeholder": {
-    en: "Share your experience with Dr. Sarah...",
-    ar: "شارك تجربتك مع د. سارة...",
-    fr: "Partagez votre expérience avec Dr. Sarah...",
+    en: "Share your experience with Dr. Eddy Farah...",
+    ar: "شارك تجربتك مع د.عيدي فرح...",
+    fr: "Partagez votre expérience avec Dr. Eddy Farah...",
   },
   "feedback.form.submit": {
     en: "Submit Feedback",
@@ -575,10 +575,45 @@ export const translations: Translations = {
     ar: "لا توجد ملاحظات متاحة بعد. كن أول من يشارك تجربته!",
     fr: "Aucun commentaire disponible pour le moment. Soyez le premier à partager votre expérience!",
   },
-}
+  "sercvices.readMore": {
+    en: "How We Can Work Together",
+    ar: "كيف يمكننا العمل معا",
+    fr: "Comment Nous Pouvons Travailler Ensemble",
+  },
+  "services.readMore1": {
+    en: "Make an appointment for an initial videoconference or physical consultation. Let's discuss your needs and how I can help you.",
+    ar: "قم بتحديد موعد لاستشارة أولية عبر الفيديو أو فيزيائية. دعنا نناقش احتياجاتك وكيف يمكنني مساعدتك.",
+    fr: "Prenez rendez-vous pour une première consultation en visioconférence ou en physique. Discutons de vos besoins et de la manière dont je peux vous aider.",
+  },
+  "services.titr1": {
+    en: "Schedule a Consultation",
+    ar: "جدولة التشاور",
+    fr: "Planifier une Consultation",
+  },
+  "services.titr2": {
+    en: "Determine your difficulties",
+    ar: "تحديد الصعوبات الخاصة بك",
+    fr: "Déterminer vos difficultés ",
+  },
+  "services.readMore2": {
+    en: "We cannot solve a problem without having clearly defined it. Our first consultation will be an opportunity to get to know each other and identify your problems.",
+    ar: "لا يمكننا حل مشكلة دون تحديدها بوضوح. ستكون استشارتنا الأولى فرصة للتعرف على بعضنا البعض وتحديد مشاكلك.",
+    fr: "On ne peut régler un problème sans l’avoir clairement défini. Notre première consultation sera l’occasion d’apprendre à se connaître et à identifier vos problématiques.",
+  },
+  "services.titr3": {
+    en: "Create a Personalized Action Plan",
+    ar: "إنشاء خطة عمل مخصصة",
+    fr: "Créer un Plan d’Action Personnalisé",
+  },
+  "services.readMore3": {
+    en: "Make an appointment for an initial videoconference or physical consultation. Let's discuss your needs and how I can help you.",
+    ar: "دعونا نطور معا خطة عمل مصممة خصيصا لتحقيق أهداف التغيير والتنمية الخاصة بك. حان الوقت لاتخاذ إجراء!",
+    fr: "Élaborons ensemble un plan d’action sur mesure pour atteindre vos objectifs de changement et de développement. Il est temps de passer à l’action ! ",
+  },
+};
 
-export type Language = "en" | "ar" | "fr"
+export type Language = "en" | "ar" | "fr";
 
 export function getTranslation(key: string, language: Language): string {
-  return translations[key]?.[language] || key
+  return translations[key]?.[language] || key;
 }

@@ -1,17 +1,23 @@
-import { type NextRequest, NextResponse } from "next/server"
-import { generateEmailTemplate, type EmailNotificationData } from "@/lib/email-service"
+import { type NextRequest, NextResponse } from "next/server";
+import {
+  generateEmailTemplate,
+  type EmailNotificationData,
+} from "@/lib/email-service";
 
 export async function POST(request: NextRequest) {
   try {
-    const data: EmailNotificationData = await request.json()
+    const data: EmailNotificationData = await request.json();
 
     // Validate required fields
     if (!data.clientName || !data.clientEmail || !data.referenceId) {
-      return NextResponse.json({ error: "Missing required fields" }, { status: 400 })
+      return NextResponse.json(
+        { error: "Missing required fields" },
+        { status: 400 }
+      );
     }
 
     // Generate email content
-    const emailHtml = generateEmailTemplate(data)
+    const emailHtml = generateEmailTemplate(data);
     const emailText = `
 New Appointment Booking - ${data.referenceId}
 
@@ -23,9 +29,11 @@ Date: ${data.date}
 Time: ${data.time}
 ${data.notes ? `Notes: ${data.notes}` : ""}
 
-Location: ${[data.location.city, data.location.region, data.location.country].filter(Boolean).join(", ")}
+Location: ${[data.location.city, data.location.region, data.location.country]
+      .filter(Boolean)
+      .join(", ")}
 Firebase ID: ${data.appointmentId}
-    `.trim()
+    `.trim();
 
     // For demonstration, we'll use a mock email service
     // In production, you would integrate with services like:
@@ -34,20 +42,20 @@ Firebase ID: ${data.appointmentId}
     // - Nodemailer with SMTP
     // - EmailJS: https://emailjs.com
 
-    console.log("[v0] Email notification would be sent:")
-    console.log("To: admin@drsarahpsychology.com")
-    console.log("Subject: New Appointment Booking -", data.referenceId)
-    console.log("HTML Content:", emailHtml.substring(0, 200) + "...")
+    console.log("[v0] Email notification would be sent:");
+    console.log("To: admin@drsarahpsychology.com");
+    console.log("Subject: New Appointment Booking -", data.referenceId);
+    console.log("HTML Content:", emailHtml.substring(0, 200) + "...");
 
     // Simulate email sending delay
-    await new Promise((resolve) => setTimeout(resolve, 1000))
+    await new Promise((resolve) => setTimeout(resolve, 1000));
 
     // Mock successful response
     return NextResponse.json({
       success: true,
       message: "Admin notification sent successfully",
       referenceId: data.referenceId,
-    })
+    });
 
     /* 
     // Example integration with Resend (uncomment and configure):
@@ -70,10 +78,13 @@ Firebase ID: ${data.appointmentId}
     })
     */
   } catch (error) {
-    console.error("[v0] Error in send-notification API:", error)
+    console.error("[v0] Error in send-notification API:", error);
     return NextResponse.json(
-      { error: "Failed to send notification", details: error instanceof Error ? error.message : "Unknown error" },
-      { status: 500 },
-    )
+      {
+        error: "Failed to send notification",
+        details: error instanceof Error ? error.message : "Unknown error",
+      },
+      { status: 500 }
+    );
   }
 }

@@ -1,6 +1,10 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 :root {
@@ -122,7 +126,8 @@
   /* Updated font configuration for trilingual support (English, Arabic, French) */
   --font-sans: var(--font-inter);
   --font-serif: var(--font-amiri);
-  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
 }
 
 @layer base {
@@ -151,4 +156,28 @@
   * {
     transition: all 0.2s ease-in-out;
   }
+}
+
+@font-face {
+  font-family: "LibertinusSerif";
+  src: url("/fonts/LibertinusSerif-Regular.ttf") format("ttf");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "LibertinusSerifBlod";
+  src: url("/fonts/LibertinusSerif-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MeaCulpa";
+  src: url("/fonts/MeaCulpa-Regular.ttf") format("ttf");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+  font-display: swap;
 }
