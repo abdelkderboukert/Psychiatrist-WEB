@@ -78,40 +78,41 @@ export function FeedbackSection() {
 
   //   loadFeedback();
   // }, []);
-  const sampleFeedbacks: Feedback[] = [
-    {
-      id: "1",
-      name: "Sarah M.",
-      rating: 5,
-      message:
-        "Dr. Sarah helped me through a very difficult time. Her compassionate approach and professional expertise made all the difference in my healing journey.",
-      date: "2024-01-15",
-      approved: true,
-      language: "en",
-    },
-    {
-      id: "2",
-      name: "Ahmed K.",
-      rating: 5,
-      message:
-        "Excellent therapist with deep understanding of cultural nuances. I felt heard and supported throughout my sessions.",
-      date: "2024-01-10",
-      approved: true,
-      language: "en",
-    },
-    {
-      id: "3",
-      name: "Marie L.",
-      rating: 4,
-      message:
-        "Professional and caring approach. The sessions were very helpful for my anxiety management.",
-      date: "2024-01-05",
-      approved: true,
-      language: "en",
-    },
-  ];
+
   useEffect(() => {
     const loadFeedback = async () => {
+      const sampleFeedbacks: Feedback[] = [
+        {
+          id: "1",
+          name: "Sarah M.",
+          rating: 5,
+          message:
+            "Dr. Sarah helped me through a very difficult time. Her compassionate approach and professional expertise made all the difference in my healing journey.",
+          date: "2024-01-15",
+          approved: true,
+          language: "en",
+        },
+        {
+          id: "2",
+          name: "Ahmed K.",
+          rating: 5,
+          message:
+            "Excellent therapist with deep understanding of cultural nuances. I felt heard and supported throughout my sessions.",
+          date: "2024-01-10",
+          approved: true,
+          language: "en",
+        },
+        {
+          id: "3",
+          name: "Marie L.",
+          rating: 4,
+          message:
+            "Professional and caring approach. The sessions were very helpful for my anxiety management.",
+          date: "2024-01-05",
+          approved: true,
+          language: "en",
+        },
+      ];
       try {
         setLoading(true);
         const approvedFeedback = await FeedbackService.getApprovedFeedback();

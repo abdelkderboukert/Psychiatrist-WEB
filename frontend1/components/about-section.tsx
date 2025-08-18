@@ -1,6 +1,6 @@
 "use client";
 
-import { Card, CardContent } from "@/components/ui/card";
+// import { Card, CardContent } from "@/components/ui/card";
 import { useLanguage } from "@/components/language-provider";
 import { getTranslation } from "@/lib/translations";
 
