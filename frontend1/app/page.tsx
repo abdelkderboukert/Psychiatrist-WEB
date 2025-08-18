@@ -109,6 +109,47 @@ export default function HomePage() {
       <ServicesSection />
       <FeedbackSection />
       <BookingForm />
+      <div className="w-screen h-screen bg-white">
+        <div className="w-full h-4/5 grid grid-cols-1 lg:grid-cols-5 gap-0">
+          <div className="relative lg:col-span-2 hidden lg:block bg-zinc-50 h-full">
+            <div className="absolute -bottom-12 -right-20  p-4 w-full h-48  bg-emerald-950 z-40">
+              <div className="absolute inset-0 flex items-center justify-center p-4">
+                <div className="grid size-full grid-cols-1 font-serif text-3xl font-bold gap-3 p-1">
+                  <p className="text-white/80">
+                    « Lire les livres c’est de la culture. Lire les visages
+                    c’est de l’intelligence Lire les âmes c’est de la sagesse et
+                    du discernement. »
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="relative lg:col-span-3 h-full overflow-hidden">
+            <img
+              src="/main.jpeg"
+              alt="main photo"
+              className="size-full bg-cover blur-xs object-cover"
+            />
+            <div className="absolute inset-0 flex items-center justify-center p-4">
+              <div className="text-left md:w-2/3 text-white">
+                <h1 className="text-4xl font-bold font-serif">
+                  {getTranslation("main.title", language)}
+                </h1>
+                <p className="mt-2 text-sm text-zinc-300/80">
+                  {getTranslation("main.subtitle", language)}
+                </p>
+                <Button
+                  size="lg"
+                  onClick={scrollToBooking}
+                  className="text-md w-48 h-10 mt-5 px-4 py-3 rounded-lg bg-white/70 text-emerald-800"
+                >
+                  {getTranslation("hero.cta", language)}
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <Footer />
     </main>
   );

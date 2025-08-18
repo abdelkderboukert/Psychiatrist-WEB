@@ -121,7 +121,7 @@ export function generateEmailTemplate(data: EmailNotificationData): string {
     </div>
 
     <div class="footer">
-      <p>This is an automated notification from Dr. Sarah Psychology booking system.</p>
+      <p>This is an automated notification from Dr. Farah Psychology booking system.</p>
       <p>Please contact the client to confirm the appointment details.</p>
     </div>
   </div>

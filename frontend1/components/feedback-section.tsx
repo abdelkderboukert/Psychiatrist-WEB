@@ -84,10 +84,10 @@ export function FeedbackSection() {
       const sampleFeedbacks: Feedback[] = [
         {
           id: "1",
-          name: "Sarah M.",
+          name: "farah M.",
           rating: 5,
           message:
-            "Dr. Sarah helped me through a very difficult time. Her compassionate approach and professional expertise made all the difference in my healing journey.",
+            "Dr. farah helped me through a very difficult time. Her compassionate approach and professional expertise made all the difference in my healing journey.",
           date: "2024-01-15",
           approved: true,
           language: "en",
