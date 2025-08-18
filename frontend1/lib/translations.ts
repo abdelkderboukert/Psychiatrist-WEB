@@ -610,6 +610,16 @@ export const translations: Translations = {
     ar: "دعونا نطور معا خطة عمل مصممة خصيصا لتحقيق أهداف التغيير والتنمية الخاصة بك. حان الوقت لاتخاذ إجراء!",
     fr: "Élaborons ensemble un plan d’action sur mesure pour atteindre vos objectifs de changement et de développement. Il est temps de passer à l’action ! ",
   },
+  "main.title": {
+    en: "Take the first step towards better mental health",
+    ar: "اتخذ الخطوة الأولى نحو صحة عقلية أفضل",
+    fr: "Faites le premier pas vers une meilleure santé mentale",
+  },
+  "main.subtitle": {
+    en: "I am here to accompany you through the various difficulties of your life thanks to an approach of behavioral and cognitive therapy favoring the consideration of the person as a whole and sensitive, emotional, relational and social complexity",
+    ar: "أنا هنا لمرافقتك من خلال الصعوبات المختلفة في حياتك بفضل نهج العلاج السلوكي والمعرفي لصالح اعتبار الشخص ككل وحساسة, عاطفي, التعقيد العلائقي والاجتماعي",
+    fr: "Je suis là pour vous accompagner à travers les diverses difficultés de votre vie grâce à une approche de la thérapie comportementale et cognitive favorisant la prise en compte de la personne dans sa globalité et complexité sensible, émotionnelle, relationnelle et sociale",
+  },
 };
 
 export type Language = "en" | "ar" | "fr";
