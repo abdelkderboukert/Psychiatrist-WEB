@@ -10,7 +10,7 @@ export const translations: Translations = {
   // Header
   "site.title": {
     en: "Dr.Eddy Farah",
-    ar: "د.عيدي فرح",
+    ar: "د.هادي فرح",
     fr: "Dr.Eddy Farah",
   },
   "nav.language": {
@@ -39,7 +39,7 @@ export const translations: Translations = {
   // About Section
   "about.title": {
     en: "About Dr.Eddy Farah",
-    ar: "عن د.عيدي فرح",
+    ar: "عن د.هادي فرح",
     fr: "À Propos du Dr.Eddy Farah",
   },
   "about.description": {
@@ -522,7 +522,7 @@ export const translations: Translations = {
   },
   "feedback.form.message.placeholder": {
     en: "Share your experience with Dr. Eddy Farah...",
-    ar: "شارك تجربتك مع د.عيدي فرح...",
+    ar: "شارك تجربتك مع د.هادي فرح...",
     fr: "Partagez votre expérience avec Dr. Eddy Farah...",
   },
   "feedback.form.submit": {
@@ -619,6 +619,11 @@ export const translations: Translations = {
     en: "I am here to accompany you through the various difficulties of your life thanks to an approach of behavioral and cognitive therapy favoring the consideration of the person as a whole and sensitive, emotional, relational and social complexity",
     ar: "أنا هنا لمرافقتك من خلال الصعوبات المختلفة في حياتك بفضل نهج العلاج السلوكي والمعرفي لصالح اعتبار الشخص ككل وحساسة, عاطفي, التعقيد العلائقي والاجتماعي",
     fr: "Je suis là pour vous accompagner à travers les diverses difficultés de votre vie grâce à une approche de la thérapie comportementale et cognitive favorisant la prise en compte de la personne dans sa globalité et complexité sensible, émotionnelle, relationnelle et sociale",
+  },
+  "main.bla": {
+    en: "Reading books is culture. Reading faces is intelligence Reading souls is wisdom and discernment.",
+    ar: "قراءة الكتب هي الثقافة. قراءة الوجوه هي ذكاء قراءة النفوس هي الحكمة والتمييز.",
+    fr: "Lire les livres c’est de la culture. Lire les visages c’est de l’intelligence Lire les âmes c’est de la sagesse et du discernement.",
   },
 };
 

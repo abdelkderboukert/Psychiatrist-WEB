@@ -51,9 +51,7 @@ export default function HomePage() {
               <div className="absolute inset-0 flex items-center justify-center p-4">
                 <div className="grid size-full grid-cols-1 font-serif text-3xl font-bold gap-3 p-1">
                   <p className="text-white/80">
-                    « Lire les livres c’est de la culture. Lire les visages
-                    c’est de l’intelligence Lire les âmes c’est de la sagesse et
-                    du discernement. »
+                    «{getTranslation("main.bla", language)}»
                   </p>
                 </div>
               </div>

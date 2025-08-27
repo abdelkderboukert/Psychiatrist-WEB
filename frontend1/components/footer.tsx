@@ -23,7 +23,7 @@ export function Footer() {
           <div>
             <h4 className="font-semibold mb-4 text-foreground">Contact</h4>
             <div className="space-y-2 text-muted-foreground">
-              <p>Email: info@drFarahpsychology.com</p>
+              <p>Email: info@drAddiPsychology.com</p>
               <p>Phone: +41 7 66 21 46 66</p>
               <p>28 Rue César Roux 1005, Lausanne</p>
               <br />
